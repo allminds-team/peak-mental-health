@@ -82,7 +82,7 @@ a { color: inherit; text-decoration: none; }
 .brand {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 0px;
 }
 
 .brand__mark { width: 45px; height: 32px; }
@@ -95,7 +95,7 @@ a { color: inherit; text-decoration: none; }
   line-height: 1.2;
 }
 
-.brand__name { font-size: 16px; letter-spacing: 5px; }
+.brand__name { font-size: 18px; letter-spacing: 3px; }
 .brand__sub { font-size: 8px; letter-spacing: 2px; }
 
 .nav__links {
@@ -131,7 +131,6 @@ a { color: inherit; text-decoration: none; }
   align-items: center;
   min-height: 640px;
   overflow: hidden;
-  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -185,7 +184,6 @@ a { color: inherit; text-decoration: none; }
 /* ---------- Logos strip ---------- */
 
 .logos {
-  max-width: 1440px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -193,6 +191,7 @@ a { color: inherit; text-decoration: none; }
   flex-wrap: wrap;
   gap: 64px;
   padding: 48px 40px;
+  display:none;
 }
 
 .logos img {
@@ -207,10 +206,10 @@ a { color: inherit; text-decoration: none; }
 .section {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 64px 92px 120px;
+  padding: 120px 92px 192px;
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: 192px;
 }
 
 .section__title {
@@ -262,7 +261,7 @@ a { color: inherit; text-decoration: none; }
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 32px;
+  gap: 48px;
   text-align: center;
 }
 
@@ -373,21 +372,19 @@ a { color: inherit; text-decoration: none; }
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 32px;
+  gap: 48px;
   text-align: center;
 }
 
 /* ---------- Split band ---------- */
 
 .split-band {
-  max-width: 1440px;
   margin: 0 auto;
   background: var(--teal);
-  border-radius: 28px 28px 0 0;
-  padding: 88px 92px 0;
+  padding: 88px 92px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 52px;
+  gap: 52px;
   position: relative;
 }
 
@@ -441,8 +438,7 @@ a { color: inherit; text-decoration: none; }
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 28px;
-  transform: translateY(56px);
+  gap: 52px;
 }
 
 .info-card {
@@ -482,7 +478,7 @@ a { color: inherit; text-decoration: none; }
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 32px;
+  gap: 48px;
   text-align: center;
 }
 
@@ -498,15 +494,10 @@ a { color: inherit; text-decoration: none; }
 .benefit-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-md);
 }
 
 .benefit-card {
   padding: 28px 34px 33px;
-  border-right: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -519,7 +510,7 @@ a { color: inherit; text-decoration: none; }
 .benefit-card p { color: var(--muted); font-size: 17px; line-height: 1.65; }
 
 .practice-split__photo { height: 100%; }
-.practice-split__photo img { aspect-ratio: auto; height: 320px; }
+.practice-split__photo img { aspect-ratio: auto; }
 
 /* ---------- Quote grid (testimonials) ---------- */
 
@@ -580,12 +571,13 @@ a { color: inherit; text-decoration: none; }
 .cta-split {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background: var(--card);
+  background: var(--teal);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
   box-shadow: 0 8px 15px rgba(34, 32, 28, 0.06);
   overflow: hidden;
   width: 100%;
+  color: white;
 }
 
 .cta-split__image img { width: 100%; height: 100%; object-fit: cover; display: block; }
@@ -596,7 +588,6 @@ a { color: inherit; text-decoration: none; }
   align-items: center;
   justify-content: center;
   gap: 24px;
-  text-align: center;
   padding: 48px;
 }
 
@@ -613,16 +604,11 @@ a { color: inherit; text-decoration: none; }
 .faq-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-md);
   width: 100%;
 }
 
 .faq-item {
   padding: 28px 34px 33px;
-  border-right: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -680,8 +666,7 @@ a { color: inherit; text-decoration: none; }
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 32px;
-  text-align: center;
+  gap: 48px;
   width: 100%;
 }
 
@@ -728,7 +713,6 @@ a { color: inherit; text-decoration: none; }
   color: #dfe9dd;
   text-align: right;
   padding: 48px 92px;
-  margin-top: 56px;
   font-size: 14px;
 }
 
